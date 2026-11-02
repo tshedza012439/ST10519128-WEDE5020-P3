@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Custom Cake Enquiry | Tshipidi Bakery</title>
+
+    <meta name="description"
+          content="Submit a custom cake enquiry to Tshipidi Bakery for birthdays, weddings, graduations and other celebrations.">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Website Header -->
+    <header>
+
+        <h1>Tshipidi Bakery</h1>
+
+        <p>Freshly Baked, Made With Love</p>
+
+        <!-- Navigation Menu -->
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About Us</a>
+
+            <a href="products.html">Products</a>
+
+            <a href="custom-cakes.html">Custom Cakes</a>
+
+            <a href="enquiry.html">Enquiry</a>
+
+            <a href="gallery.html">Gallery</a>
+
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+    </header>
+
+    <hr>
+
+    <!-- Main Content -->
+    <main>
+
+        <section>
+
+            <h2>Custom Cake Enquiry</h2>
+
+            <p>
+                At Tshipidi Bakery, we create beautiful custom
+                cakes for your special occasions.
+            </p>
+
+            <p>
+                Complete the form below and tell us what type
+                of cake you would like.
+            </p>
+
+        </section>
+
+        <hr>
+
+        <!-- Enquiry Form -->
+        <section>
+
+            <h2>Customer Information</h2>
+
+            <form id="enquiry-form">
+
+                <label for="customer-name">Full Name:</label>
+
+                <input type="text"
+                       id="customer-name"
+                       name="customerName"
+                       required
+                       minlength="2">
+
+                <br><br>
+
+                <label for="customer-email">Email Address:</label>
+
+                <input type="email"
+                       id="customer-email"
+                       name="customerEmail"
+                       required>
+
+                <br><br>
+
+                <label for="customer-phone">Phone Number:</label>
+
+                <input type="tel"
+                       id="customer-phone"
+                       name="customerPhone"
+                       required>
+
+                <br><br>
+
+                <label for="occasion">Select Occasion:</label>
+
+                <select id="occasion"
+                        name="occasion"
+                        required>
+
+                    <option value="">Choose an occasion</option>
+
+                    <option value="Birthday">Birthday</option>
+
+                    <option value="Wedding">Wedding</option>
+
+                    <option value="Baby Shower">Baby Shower</option>
+
+                    <option value="Graduation">Graduation</option>
+
+                    <option value="Anniversary">Anniversary</option>
+
+                    <option value="Other">Other Celebration</option>
+
+                </select>
+
+                <br><br>
+
+                <label for="cake-flavour">Cake Flavour:</label>
+
+                <select id="cake-flavour"
+                        name="flavour"
+                        required>
+
+                    <option value="">Choose a flavour</option>
+
+                    <option value="Chocolate">Chocolate</option>
+
+                    <option value="Vanilla">Vanilla</option>
+
+                    <option value="Red Velvet">Red Velvet</option>
+
+                    <option value="Carrot Cake">Carrot Cake</option>
+
+                </select>
+
+                <br><br>
+
+                <label for="event-date">Event Date:</label>
+
+                <input type="date"
+                       id="event-date"
+                       name="eventDate"
+                       required>
+
+                <br><br>
+
+                <label for="cake-size">Cake Size:</label>
+
+                <select id="cake-size"
+                        name="cakeSize"
+                        required>
+
+                    <option value="">Choose cake size</option>
+
+                    <option value="Small">Small</option>
+
+                    <option value="Medium">Medium</option>
+
+                    <option value="Large">Large</option>
+
+                </select>
+
+                <br><br>
+
+                <label for="cake-details">
+                    Describe Your Cake Requirements:
+                </label>
+
+                <br>
+
+                <textarea id="cake-details"
+                          name="cakeDetails"
+                          rows="6"
+                          cols="40"
+                          placeholder="Describe your cake design, colours and decorations..."
+                          required>
+                </textarea>
+
+                <br><br>
+
+                <button type="submit">
+                    Submit Enquiry
+                </button>
+
+            </form>
+
+            <!-- Form feedback -->
+            <p id="enquiry-result" aria-live="polite"></p>
+
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; 2026 Tshipidi Bakery.
+            All Rights Reserved.
+        </p>
+
+        <p>Freshly Baked, Made With Love.</p>
+
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="js/script.js" defer></script>
+
+</body>
+
+</html>

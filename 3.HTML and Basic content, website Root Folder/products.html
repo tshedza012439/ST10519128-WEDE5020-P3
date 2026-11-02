@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products | Tshipidi Bakery</title>
+<meta name="description" content="Explore Tshipidi Bakery products, including chocolate cakes, vanilla cakes, cupcakes, freshly baked bread and biscuits.">
+<meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <!-- Website Header -->
+    <header>
+        <h1>Tshipidi Bakery
+        <img src="images/galery.png" alt="250".height="250">
+        </h1>
+
+        <!-- Navigation Menu -->
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About Us</a> |
+            <a href="products.html">Products</a> |
+            <a href="custom-cakes.html">Custom Cakes</a> |
+            <a href="gallery.html">Gallery</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- Main Content -->
+    <main>
+
+        <section class="page-intro">
+    <h1>Our Products</h1>
+    <p>Explore our freshly baked cakes, cupcakes, bread and biscuits.</p>
+</section>
+
+<section class="content-section">
+    <h2>Find a Product</h2>
+
+    <label for="product-search">Search products:</label>
+    <input
+        type="search"
+        id="product-search"
+        placeholder="Search for cakes, bread or biscuits..."
+    >
+
+    <label for="category-filter">Choose a category:</label>
+    <select id="category-filter">
+        <option value="all">All Products</option>
+        <option value="cakes">Cakes</option>
+        <option value="cupcakes">Cupcakes</option>
+        <option value="bread">Bread</option>
+        <option value="biscuits">Biscuits</option>
+    </select>
+
+    <p id="product-results" aria-live="polite"></p>
+
+    <div id="product-list" class="product-grid">
+        <p>Loading products...</p>
+    </div>
+</section>
+    </main>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Tshipidi Bakery. All Rights Reserved.</p>
+    </footer>
+<script src="js/script.js" defer></script>
+</body>
+</html>
